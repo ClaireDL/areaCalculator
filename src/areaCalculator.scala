@@ -3,15 +3,24 @@ object areaCalculator {
 
   def main( args: Array[String] ): Unit = {
     val piada = new Circle
-    println(piada.area(4 ))
+    var result = piada.area(4 )
+    println(s"piada: $result")
+
     val toast = new Square
-    println(toast.area(5 ))
+    result = toast.area(5 )
+    println(s"toast: $result")
+
     val biscuit = new Rectangle
-    println(biscuit.area( 3, 5))
+    result = biscuit.area( 3, 5)
+    println(s"biscuit: $result")
+
     val harlequin = new Rhombus
-    println(harlequin.area( 3, 4))
+    result = harlequin.area( 3, 4)
+    println(s"harlequin: $result")
+
     val croissant = new Triangle
-    println(croissant.area( 8, 12))
+    result = croissant.area( 8, 12)
+    println(s"croissant: $result")
  }
 }
 
